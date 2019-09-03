@@ -7,7 +7,7 @@
     "declaration": false,
     "module": "es2015",
     "moduleResolution": "node",
-    "emitDecoratorMetadata": true,
+    "emitDecoratorMetad ata": true,
     "experimentalDecorators": true,
     "importHelpers": true,
     "target": "es5",
