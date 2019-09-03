@@ -62,7 +62,7 @@
           },
           "configurations": {
             "production": {
-              "browserTarget": "GithubSearch:build:production"
+              "browserTarget": "GithubSearch: build:production"
             }
           }
         },
