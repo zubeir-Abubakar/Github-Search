@@ -1,0 +1,119 @@
+#welcome
+{
+    background:  url("../../assets/img/bg.jpg") center center/cover no-repeat;
+    width: 100%;
+    color:#ffffff;
+    height:30vh;
+}
+h1
+{
+    color: white
+}
+a {
+    color: black;
+    text-decoration: none
+}
+.fas-nav 
+{
+    color: white
+}
+.nav-link{
+    color: white ;
+    }
+.nav-link:hover
+{
+    color: white;
+}
+.title 
+{
+  font-size: 5rem
+}
+
+.content
+{
+    display: flex;
+}
+
+.main-content
+{
+    flex: 1;
+    margin-top: 5vh;
+    margin-right: 2rem;
+    margin-left: 2rem;
+}
+
+.repo-card{
+    margin-bottom: 1rem;
+}
+
+/* profile */
+.profile
+{
+    margin-top: 5vh;
+    flex: 1;
+    height: 30%
+} 
+
+.prof-image
+{
+    width: 10rem;
+    border-radius: 50%
+}
+
+.card-header
+{
+    max-width: 40%;
+    text-align: center
+}
+.card-block
+{
+    padding: 2rem;
+    width: 60%
+}
+.fas-prof
+{
+    margin-right: 1rem;
+} 
+
+
+@media(max-width :786px)
+{
+    .card-header
+{
+    max-width: 100%;
+   
+}
+.card-block
+{
+    padding: 2rem;
+    width: 100%
+}
+.navbar
+{
+    justify-content: center;
+    width: 100%
+    
+}
+.title 
+{
+  font-size: 2rem
+}
+.content
+{
+flex-direction: column
+}
+.card-header
+{
+    width: 100%;
+   
+}
+.card-block
+{
+    width: 100%
+}
+.profile
+{
+    margin-top: 0;
+
+} 
+}

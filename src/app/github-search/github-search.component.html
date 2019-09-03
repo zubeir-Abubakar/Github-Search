@@ -1,0 +1,68 @@
+<div id="welcome" class="d-flex justify-content-center align-items-center">
+  <h1 class="title"> GITHUB SEARCH </h1>
+</div>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark d-flex justify-content-end">
+    <form #searchForm='ngForm' (ngSubmit)='onSubmit(name)' class="form-inline d-flex justify-content-center">
+        <input id="name" [(ngModel)]="name" name="name" class="form-control mr-sm-2" type="search" placeholder="Username" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+</nav>
+
+<div class="content">
+
+  <div class="profile  d-flex justify-content-center">
+    <div class="card flex-row flex-wrap">
+      <div class="card-header border-0">
+        <img class="prof-image" src="{{ user.avatar_url }}" alt="">
+        <h5>{{ user.name }}</h5>
+        <p>Bio: {{user.bio}}</p>
+        <ul class="list-group">
+          <p>
+            Followers:
+            <span class="badge badge-primary badge-pill">{{ user.followers }}</span>
+          </p>
+
+          <p>
+            Following:
+            <span class="badge badge-primary badge-pill">{{ user.following }}</span>
+          </p>
+        </ul>
+      </div>
+      <div class="card-block">
+        <p> <i class="fas-prof fas fa-sign-in-alt"></i> Login: {{ user.login }}</p>
+        <hr>
+        <p> <i class="fas-prof fas fa-location-arrow"></i>Location: {{ user.location }}</p>
+        <hr>
+        <p><i class="fas-prof fas fa-envelope-open"></i> Email: {{ user.email }}</p>
+        <hr>
+        <p> <i class="fas-prof fas fa-code-branch"></i>Public Repos: {{ user.public_repos }} </p>
+        <hr>
+        <p> <i class="fas-prof fas fa-building"></i>Company: {{ user.company }} </p>
+        <hr>
+        <i class="fas-prof fab fa-html5"></i>
+        Blog:<a href="{{ user.blog }}" target="_blank"> {{ user.blog }} </a>
+        <hr>
+      </div>
+      
+    </div>
+  </div>
+
+
+  <!-- Page content -->
+    <div  class="main-content">
+      <div *ngFor ="let repo of reposArray"  class="card repo-card">
+        <div class="card-body">
+          <h5 class="card-title"> Title:  {{repo.name}} </h5>
+          <p class="card-text"> Description: {{ repo.description }}</p>
+          <div class="d-flex justify-content-around align-items-center">
+            <a href="{{ repo.html_url }}" target=".blank"> <button type="button" class="btn btn-outline-success btn-sm">Repo Url</button> </a>
+            <span class="badge badge-success"> Watchers: {{repo.watchers_count}}</span>
+            <span class="badge badge-success">Forks: {{repo.forks_count}}</span>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  
+
+</div>
