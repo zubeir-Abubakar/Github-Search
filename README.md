@@ -17,7 +17,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## How to run it
 
-1. [Live Version](https://zubeir-Ab.github.io/Github-Search/)
+1. [Live Version](https://zubeir-Abu.github.io/Github-Search/)
 2. Clone the repo then follow the following instruction
 
 ## Development server
